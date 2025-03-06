@@ -8,7 +8,7 @@ const cors = require('cors');
 app.use(cors())
 const socketio = require('socket.io');
 app.use(express.static(__dirname+'/public'));
-app.use(express.json());
+app.use(express.json());    
 
 
 const key = fs.readFileSync('./certs/cert.key');
